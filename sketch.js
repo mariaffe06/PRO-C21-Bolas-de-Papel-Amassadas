@@ -42,8 +42,7 @@ function setup() {
 
 function keyPressed(){
   if (keyCode === UP_ARROW){
-    ball.velocityY = -15
-    ball.velocityX = 10
+    Matter.Body.applyForce(ball, ball.position, {x:350, y:-500});
   }
 }
 
